@@ -1,0 +1,27 @@
+{
+  "name": "craftura",
+  "version": "1.0.0",
+  "description": "Craftura Fine Furniture \u2014 static Next.js 14 site (GitHub Pages)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve out",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "next": "14.2.35",
+    "postcss": "^8.4.38",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "3.4.4",
+    "typescript": "^5.4.5"
+  }
+}

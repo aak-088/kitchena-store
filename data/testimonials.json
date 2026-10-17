@@ -1,0 +1,38 @@
+[
+  {
+    "id": "cmnpyspum001aujnquajdl7w3",
+    "name": "Rajesh Patel",
+    "role": "GM, The Heritage Grand Hotel",
+    "location": "Ahmedabad",
+    "quote": "Craftura supplied all the furniture for our 80-room boutique hotel. The quality is exceptional and delivery was on time. Highly recommend for bulk orders.",
+    "rating": 5,
+    "featured": true,
+    "order": 0,
+    "createdAt": "2026-04-08T11:28:25.000Z",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpyspur001bujnqfmpmzm1b",
+    "name": "Priya Mehta",
+    "role": "Facilities Manager, TechCorp India",
+    "location": "Ahmedabad",
+    "quote": "We have been ordering office furniture for our 5 branches from Craftura for 6 years. Consistent quality, great service, and the customization options are unmatched.",
+    "rating": 5,
+    "featured": true,
+    "order": 1,
+    "createdAt": "2026-04-08T11:28:25.000Z",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpyspux001cujnq61wvah2k",
+    "name": "Anita Sharma",
+    "role": "Homeowner",
+    "location": "Surat",
+    "quote": "The bedroom set I ordered is absolutely stunning. The craftsmanship is visible in every joint and finish. Worth every rupee.",
+    "rating": 5,
+    "featured": true,
+    "order": 2,
+    "createdAt": "2026-04-08T11:28:25.000Z",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  }
+]

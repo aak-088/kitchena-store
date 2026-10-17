@@ -1,0 +1,80 @@
+[
+  {
+    "id": "cmnpyspsp000xujnqge3ah661",
+    "key": "hero_title",
+    "value": "Crafted for Generations",
+    "updatedAt": "2026-04-08T11:28:24.000Z"
+  },
+  {
+    "id": "cmnpyspsu000yujnqpp346hgx",
+    "key": "hero_subtitle",
+    "value": "Premium furniture handcrafted by master artisans. Serving homes, hotels, and offices across India.",
+    "updatedAt": "2026-04-08T11:28:24.000Z"
+  },
+  {
+    "id": "cmnpyspt0000zujnqgyzrrn4w",
+    "key": "about_title",
+    "value": "Three Decades of Craftsmanship",
+    "updatedAt": "2026-04-08T11:28:24.000Z"
+  },
+  {
+    "id": "cmnpyspt50010ujnq4ql4vkaz",
+    "key": "about_text",
+    "value": "Since 1994, Craftura has been synonymous with quality furniture manufacturing. Our master craftsmen combine traditional Indian joinery techniques with contemporary design sensibilities to create pieces that stand the test of time.",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpyspta0011ujnqzfunbqd2",
+    "key": "phone",
+    "value": "+91 98765 43210",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpysptg0012ujnqau1fh6tm",
+    "key": "email",
+    "value": "info@craftura.com",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpysptm0013ujnqlrdo6nsg",
+    "key": "address",
+    "value": "Plot 42, GIDC Industrial Estate, Ahmedabad, Gujarat 380025",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpysptr0014ujnqp9y4hvmp",
+    "key": "whatsapp",
+    "value": "+919876543210",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpysptw0015ujnq1c3qpwbj",
+    "key": "nav_show_gallery",
+    "value": "true",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpyspu10016ujnq7snv7mf8",
+    "key": "nav_show_bulk_orders",
+    "value": "true",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpyspu60017ujnq2fu3vzea",
+    "key": "nav_show_blog",
+    "value": "true",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpyspub0018ujnqb3gpidgd",
+    "key": "nav_show_about",
+    "value": "true",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  },
+  {
+    "id": "cmnpyspug0019ujnq5mwo3a7r",
+    "key": "nav_show_contact",
+    "value": "true",
+    "updatedAt": "2026-04-08T11:28:25.000Z"
+  }
+]

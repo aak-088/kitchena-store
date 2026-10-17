@@ -1,0 +1,58 @@
+[
+  {
+    "id": "cmnpyspqx000aujnqg1l5wods",
+    "url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800",
+    "altText": "Artisan Oak Sofa",
+    "isPrimary": true,
+    "order": 0,
+    "productId": "cmnpyspqs0008ujnq7fwxumcv"
+  },
+  {
+    "id": "cmnpyspr2000cujnqjfx7bs82",
+    "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800",
+    "altText": "Artisan Oak Sofa",
+    "isPrimary": false,
+    "order": 1,
+    "productId": "cmnpyspqs0008ujnq7fwxumcv"
+  },
+  {
+    "id": "cmnpysprd000gujnq5xl91kzu",
+    "url": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800",
+    "altText": "Heritage King Bed",
+    "isPrimary": true,
+    "order": 0,
+    "productId": "cmnpyspr7000eujnq1jr8j14x"
+  },
+  {
+    "id": "cmnpysprn000kujnqlnn2aepy",
+    "url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800",
+    "altText": "Manor Dining Table",
+    "isPrimary": true,
+    "order": 0,
+    "productId": "cmnpyspri000iujnqp9e579tm"
+  },
+  {
+    "id": "cmnpyspry000oujnqmidqn5c2",
+    "url": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800",
+    "altText": "Executive Work Desk",
+    "isPrimary": true,
+    "order": 0,
+    "productId": "cmnpysprt000mujnqf0k73me3"
+  },
+  {
+    "id": "cmnpysps9000sujnqxcugoc1o",
+    "url": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
+    "altText": "Rajwada Wardrobe",
+    "isPrimary": true,
+    "order": 0,
+    "productId": "cmnpysps4000qujnqlg5weiyf"
+  },
+  {
+    "id": "cmnpyspsk000wujnqhcuenafy",
+    "url": "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?w=800",
+    "altText": "Lotus Coffee Table",
+    "isPrimary": true,
+    "order": 0,
+    "productId": "cmnpyspsf000uujnqn9ououx3"
+  }
+]

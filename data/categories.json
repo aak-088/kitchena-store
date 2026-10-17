@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cmnpysppm0001ujnqhm0om4h7",
+    "name": "Living Room",
+    "slug": "living-room",
+    "description": "Sofas, coffee tables, TV units and more",
+    "imageUrl": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600",
+    "createdAt": "2026-04-08T11:28:24.000Z",
+    "updatedAt": "2026-04-08T11:28:24.000Z"
+  },
+  {
+    "id": "cmnpyspps0002ujnqvyfbipoe",
+    "name": "Bedroom",
+    "slug": "bedroom",
+    "description": "Beds, wardrobes, dressers and nightstands",
+    "imageUrl": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600",
+    "createdAt": "2026-04-08T11:28:24.000Z",
+    "updatedAt": "2026-04-08T11:28:24.000Z"
+  },
+  {
+    "id": "cmnpysppy0003ujnq8zgg8e9e",
+    "name": "Dining",
+    "slug": "dining",
+    "description": "Dining tables, chairs and sideboards",
+    "imageUrl": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600",
+    "createdAt": "2026-04-08T11:28:24.000Z",
+    "updatedAt": "2026-04-08T11:28:24.000Z"
+  },
+  {
+    "id": "cmnpyspq40004ujnqhb8599xj",
+    "name": "Office",
+    "slug": "office",
+    "description": "Desks, office chairs and storage solutions",
+    "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600",
+    "createdAt": "2026-04-08T11:28:24.000Z",
+    "updatedAt": "2026-04-08T11:28:24.000Z"
+  },
+  {
+    "id": "cmnpyspqa0005ujnqluieiura",
+    "name": "Outdoor",
+    "slug": "outdoor",
+    "description": "Garden furniture and outdoor seating",
+    "imageUrl": "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600",
+    "createdAt": "2026-04-08T11:28:24.000Z",
+    "updatedAt": "2026-04-08T11:28:24.000Z"
+  },
+  {
+    "id": "cmnpyspqg0006ujnq8okn1lt0",
+    "name": "Storage",
+    "slug": "storage",
+    "description": "Bookshelves, cabinets and storage units",
+    "imageUrl": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+    "createdAt": "2026-04-08T11:28:24.000Z",
+    "updatedAt": "2026-04-08T11:28:24.000Z"
+  }
+]
