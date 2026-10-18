@@ -94,3 +94,4 @@ npm audit
 
 The repository's GitHub Actions workflow runs CI only; it does not deploy. Vercel preparation is a separate follow-up after the live Supabase integration test passes. **Do not deploy until explicitly approved.** No production readiness claim is made from a build or local tests alone.
 "# kitchena-st" 
+"# kitchena-st" 
