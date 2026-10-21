@@ -1,11 +1,12 @@
 import { MetadataRoute } from 'next'
-import { getProducts, getCategories, getPublishedPosts } from '@/lib/data'
+import { getPublishedPosts } from '@/lib/data'
+import { getStorefrontCategories, getStorefrontProducts } from '@/lib/storefront/catalog'
 
-export const dynamic = 'force-static'
+export const dynamic = 'force-dynamic'
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://craftura.com'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
     {
@@ -47,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Dynamic product pages
-  const products = getProducts()
+  const products = await getStorefrontProducts()
 
   const productPages: MetadataRoute.Sitemap = products.map(product => ({
     url: `${BASE_URL}/products/${product.slug}`,
@@ -57,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }))
 
   // Dynamic category pages
-  const categories = getCategories()
+  const categories = await getStorefrontCategories()
 
   const categoryPages: MetadataRoute.Sitemap = categories.map(cat => ({
     url: `${BASE_URL}/products?category=${cat.slug}`,

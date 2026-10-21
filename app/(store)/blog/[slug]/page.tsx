@@ -11,8 +11,9 @@ export function generateStaticParams() {
   return getPublishedPosts().map(p => ({ slug: p.slug }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const post = getPostBySlug(params.slug)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const post = getPostBySlug(slug)
   if (!post) return { title: 'Post Not Found' }
   return buildMetadata({
     title: post.title,
@@ -42,8 +43,9 @@ function renderMarkdown(text: string): string {
     .join('\n')
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = getPostBySlug(params.slug)
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = getPostBySlug(slug)
   if (!post) notFound()
 
   const { prev, next } = getAdjacentPosts(post)

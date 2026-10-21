@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { getFeaturedProducts, getCategories, getFeaturedTestimonials, getPublishedPosts } from '@/lib/data'
+import { getFeaturedTestimonials, getPublishedPosts } from '@/lib/data'
+import { getStorefrontCategories, getStorefrontFeaturedProducts } from '@/lib/storefront/catalog'
 import type { Metadata } from 'next'
 import { localBusinessJsonLd } from '@/lib/seo'
 
@@ -15,17 +16,24 @@ export const metadata: Metadata = {
   },
 }
 
-function getHomeData() {
+export const dynamic = 'force-dynamic'
+
+async function getHomeData() {
+  const [featuredProducts, categories] = await Promise.all([
+    getStorefrontFeaturedProducts(6),
+    getStorefrontCategories(),
+  ])
+
   return {
-    featuredProducts: getFeaturedProducts(6),
-    categories: getCategories().slice(0, 6),
+    featuredProducts,
+    categories: categories.slice(0, 6),
     testimonials: getFeaturedTestimonials(3),
     blogPosts: getPublishedPosts().slice(0, 3),
   }
 }
 
-export default function HomePage() {
-  const { featuredProducts, categories, testimonials, blogPosts } = getHomeData()
+export default async function HomePage() {
+  const { featuredProducts, categories, testimonials, blogPosts } = await getHomeData()
   const jsonLd = localBusinessJsonLd()
   const spotlightCategories = categories.slice(0, 4)
   const latestStory = blogPosts[0]

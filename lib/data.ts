@@ -1,10 +1,9 @@
 /**
- * Static data layer.
+ * Static storefront data layer.
  *
- * The site is exported as plain static HTML for GitHub Pages, so there is no
- * database at runtime. All content lives in /data/*.json and is read at build
- * time. To change products, blog posts, testimonials, etc. edit those files
- * and push — GitHub Actions will rebuild and redeploy the site.
+ * Products and categories are loaded into a generated snapshot before export
+ * when Supabase is configured; checked-in JSON remains the local fallback.
+ * Other storefront content continues to come from /data/*.json.
  */
 import categoriesJson from '@/data/categories.json'
 import productsJson from '@/data/products.json'

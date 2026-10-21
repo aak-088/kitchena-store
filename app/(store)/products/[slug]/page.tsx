@@ -1,21 +1,18 @@
-import { getProducts, getProductBySlug, getRelatedProducts } from '@/lib/data'
+import { getStorefrontProductBySlug, getStorefrontRelatedProducts } from '@/lib/storefront/catalog'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import ProductDetailClient from '@/components/store/ProductDetailClient'
 import { buildMetadata, productJsonLd, breadcrumbJsonLd } from '@/lib/seo'
 
-export const dynamicParams = false
+export const dynamic = 'force-dynamic'
 
-export function generateStaticParams() {
-  return getProducts().map(p => ({ slug: p.slug }))
-}
-
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string }
-}): Metadata {
-  const product = getProductBySlug(params.slug)
+  params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+  const { slug } = await params
+  const product = await getStorefrontProductBySlug(slug)
   if (!product) return { title: 'Product Not Found' }
 
   const keywords = [
@@ -30,21 +27,22 @@ export function generateMetadata({
   return buildMetadata({
     title: `${product.name} – ${product.category.name} Furniture`,
     description: `${product.description.slice(0, 155)}${product.description.length > 155 ? '...' : ''}`,
-    path: `/products/${params.slug}`,
+    path: `/products/${slug}`,
     image: product.images[0]?.url,
     keywords,
   })
 }
 
-export default function ProductDetailPage({
+export default async function ProductDetailPage({
   params,
 }: {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }) {
-  const product = getProductBySlug(params.slug)
+  const { slug } = await params
+  const product = await getStorefrontProductBySlug(slug)
   if (!product) notFound()
 
-  const related = getRelatedProducts(product, 4)
+  const related = await getStorefrontRelatedProducts(product, 4)
 
   // JSON-LD structured data
   const productSchema = productJsonLd({

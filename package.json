@@ -1,27 +1,35 @@
 {
   "name": "craftura",
   "version": "1.0.0",
-  "description": "Craftura Fine Furniture \u2014 static Next.js 14 site (GitHub Pages)",
+  "description": "KITCHENA — Next.js storefront with a Supabase-backed admin dashboard",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve out",
-    "lint": "next lint"
+    "start": "next start",
+    "lint": "next lint",
+    "test": "node --test tests/security-contract.test.mjs tests/supabase-security.integration.test.mjs",
+    "test:supabase": "node --test tests/supabase-security.integration.test.mjs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@next/env": "15.5.28",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.118.0",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^20.0.0",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.19",
-    "next": "14.2.35",
-    "postcss": "^8.4.38",
+    "next": "^15.5.24",
+    "postcss": "^8.5.30",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "tailwindcss": "3.4.4",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5.4.5"
+  },
+  "overrides": {
+    "postcss": "$postcss"
   }
 }
